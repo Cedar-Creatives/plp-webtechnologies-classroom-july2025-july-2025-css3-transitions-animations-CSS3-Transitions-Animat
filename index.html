@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Card Quiz Game - Fullstack Dev</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🌐 Fullstack Development Flip Card Quiz</h1>
+
+  <div class="quiz-container">
+    <!-- Card 1 -->
+    <div class="flip-card" data-correct="C">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Which technology is typically used for building RESTful APIs on the back-end?</p>
+        </div>
+        <div class="flip-card-back">
+          <button data-answer="A">A) React</button>
+          <button data-answer="B">B) CSS</button>
+          <button data-answer="C">C) Express.js</button>
+          <button data-answer="D">D) HTML</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-card" data-correct="B">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Which database is a NoSQL option commonly used in fullstack apps?</p>
+        </div>
+        <div class="flip-card-back">
+          <button data-answer="A">A) MySQL</button>
+          <button data-answer="B">B) MongoDB</button>
+          <button data-answer="C">C) PostgreSQL</button>
+          <button data-answer="D">D) SQLite</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-card" data-correct="A">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>What does the term “responsive design” refer to in front-end development?</p>
+        </div>
+        <div class="flip-card-back">
+          <button data-answer="A">A) Adapting layout for different screen sizes</button>
+          <button data-answer="B">B) Handling server requests faster</button>
+          <button data-answer="C">C) Automatic database scaling</button>
+          <button data-answer="D">D) Writing asynchronous code</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flip-card" data-correct="D">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Which tool is widely used for version control in fullstack projects?</p>
+        </div>
+        <div class="flip-card-back">
+          <button data-answer="A">A) Docker</button>
+          <button data-answer="B">B) AWS</button>
+          <button data-answer="C">C) Jenkins</button>
+          <button data-answer="D">D) Git</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p id="result">Flip a card to start answering!</p>
+  <p id="score">Score: 0</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
